@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+
+    /* Cor das letras */
+    --cor-primaria-letra: #fff;
+
+    /* Cor principal do site */
+    --cor-primaria-azul: #395387;
+
+    /* Cor secundaria do site */
+    --cor-secundaria-roxo: #BA3190;
+    --cor-secundaria-verde: #009900;
+    --cor-secundaria-amarela: #FBDF20;
+    --cor-secundaria-azulclaro: #4273B8;
+
+    /* RGB do site */
+    --cor-primaria-rgb: rgb(57,83,135);
+    --cor-secundaria-rgb: rgb(186,39,157);
+    --cor-secundaria-rgb: rgb(0,153,0);
+    --cor-secundaria-rgb: rgb(251,223,32);
+    --cor-secundaria-rgb: rgb(66,115,184);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: none;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    overflow-x: hidden;
+    background-color: var(--cor-primaria-letra);
+}
+
+section{
+    padding: 0rem 9%;
+}
+
+.header{
+    background: var(--cor-primaria-azul);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9%;
+    background: linear-gradient(rgb(57,83,135)93%, transparent 90%));
+}
+
+.header .logo{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.header .navbar a{
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    font-size: 1.3rem;
+    color: var(--cor-primaria-letra);
+    text-decoration: none;
+}
+
+.header .navbar a:hover{
+    background: var(--cor-secundaria-azulclaro);
+    border-radius: 1rem;
+}
+
+#menu-btn{
+    font-size: 1rem;
+    color: var(--cor-primaria-letra);
+    cursor: pointer;
+    display: none;
+}
+
+/* Parte de baixo do cabecalho area da doação */
+
+.doacao{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+    url(/img/img4.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: var(--cor-primaria-letra);
+    padding: 3.125rem 1.25rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.doacao span{
+    font-size: 2rem;
+    color: var(--cor-primaria-letra);
+}
+
+.doacao h3{
+    padding-top: 1rem;
+    color: var(--cor-primaria-letra);
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+
+.doacao p{
+    font-size: 1.3rem;
+    margin: 0.2rem;
+    color: var(--cor-secundaria-amarela);
+}
+
+.doacao a{
+    font-size: 2rem;
+    color: var(--cor-primaria-letra);
+    border: 1px solid #BA3190;
+    border-radius: 6rem;
+    text-decoration: none;
+    padding: 1rem;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.doacao a:hover{
+    transform: scale(1.1);
+    background: var(--cor-secundaria-roxo);
+}
+
+/* Home tela inicial */
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+    padding: 4rem;
+    padding-bottom: 2rem;
+    background: var(--cor-secundaria-amarela);
+}
+
+.home .content span{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.home .content .box-container .box p{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.home .imageHome{
+    flex: 1 1 42rem;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.home .imageHome::before
+.home .imageHome::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: var(--cor-primaria-azul);
+    height: 15rem;
+    width: 15rem;
+}
+
+.home .imageHome img{
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.home .content{
+    flex: 1 1 42rem;
+}
+
+.home .content .title{
+    font-size: 4rem;
+    color: var(--cor-secundaria-azulclaro);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.home .content .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.home .content .box-container .box{
+    flex: 1 1 20rem;
+}
+
+.home .content .box-container .box h3{
+    font-size: 2rem;
+    color: var(--cor-secundaria-roxo);
+    margin-bottom: 2rem;
+}
+
+/* Desenvolvimento da instituição */
+
+.desenvolvimento .objetivo {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente (se necessário) */
+    margin-bottom: 2rem; /* Adiciona espaço entre a imagem e os boxes */
+}
+
+.desenvolvimento .objetivo img {
+    max-width: 100%; /* Ajusta a largura responsiva */
+    height: auto; /* Mantém proporção da imagem */
+    display: block; /* Garante que a imagem seja tratada como um bloco */
+}
+
+.desenvolvimento{
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.desenvolvimento .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.desenvolvimento .box-container .box{
+    height: 30rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.desenvolvimento .box-container .box:hover .content{
+    transform: translateX(.6rem);
+}
+
+.desenvolvimento .box-container .box img{
+    height: 19rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.desenvolvimento .box-container .box .content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--cor-primaria-letra);
+    padding: 2rem;
+    transform: translateY(19.5rem);
+}
+
+.desenvolvimento .box-container .box .content span{
+    font-size: 1.5rem;
+    color: var(--cor-primaria-azul);
+}
+
+.desenvolvimento .box-container .box .content h3{
+    font-size: 1.5rem;
+}
+
